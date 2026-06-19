@@ -29,7 +29,7 @@ jobs:
 
       - name: Rebuild release archive
         run: |
-          cat arcaea-webapp.tar.gz.part-* > arcaea-webapp.tar.gz
+          cat site.part1 site.part2 site.part3 site.part4 site.part5 site.part6 site.part7 > arcaea-webapp.tar.gz 
           mkdir site
           tar -xzf arcaea-webapp.tar.gz -C site
           if [ -d site/Arcaea.webapp ]; then
